@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="modal__wrapper hidden">
+      <img
+        class="img"
+        src="./modal-img.jpg"
+        width="80"
+        height="80"
+        alt="modal-img"
+      />
+      <div class="modal__description">
+        <div class="modala-header">
+          <h5 class="modal-title">Fuji Mountain</h5>
+          <i id="close" class="fa-solid fa-circle-xmark"></i>
+        </div>
+        <p class="modal-subtitle">
+          Yaponiyadagi Fuji tog'ining balandligi 3776 metrni tashkil etadi,
+          tepaliklar ko'pincha bulutlarda yashiradi, shuning uchun Fuji'ni
+          butunlay ko'ra oladigan odamlar ajoyib go'zallikni ko'radi. Kraterning
+          konstruktsiyasi lotus guliga o'xshaydi. Yostiqsimon lallar - bu juda
+          katta chuqurchalar, mahalliy aholi ularni Yaksudo-Fuyo deb atagan.
+          Tog' yoshi taxminan 10 000 yilni tashkil etadi, bu uni
+          stratovolkanalarda belgilaydi.
+        </p>
+        <a class="link" href="https://uz.wikipedia.org/wiki/Fudziyama"
+          ><i class="fa-brands fa-wikipedia-w"></i>ko'proq</a
+        >
+        <a
+          class="youtube link"
+          href="https://youtu.be/fXJ8EB1WoF4?si=jhZJ2sMYSFhfdTXa"
+          ><i class="fa-brands fa-youtube"></i>video</a
+        >
+      </div>
+    </div>
+    <div class="btn-box">
+      <button class="show-btn btn" id="btn">Malumot olish</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>

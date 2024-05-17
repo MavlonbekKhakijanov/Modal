@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./mountain.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
+  font-size: 18px;
+}
+.modal__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+  z-index: 10000;
+}
+.img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-bottom: -2.5rem;
+  z-index: 1100001;
+}
+.modal__description {
+  background-color: #ae9281da;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  z-index: 10000;
+}
+
+.modal-title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+.modal-subtitle {
+  padding: 1rem 0;
+  line-height: 27px;
+}
+#close {
+  font-size: 22px;
+  border-radius: 50%;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+}
+.modala-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link {
+  text-decoration: none;
+  color: black;
+  margin-right: 1rem;
+}
+.youtube {
+  color: red;
+}
+.fa-brands {
+  border-radius: 50%;
+  padding: 10px 8px;
+  background-color: #fff;
+  margin-right: 8px;
+}
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+  backdrop-filter: blur(2.4px);
+}
+.hidden {
+  display: none;
+}
+.btn {
+  padding: 0.6rem 3.2rem;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(to top, #ffacbb, #4e5462);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 1s ease;
+  &:hover {
+    background: linear-gradient(to bottom, #ffacbb, #4e5462);
+  }
+}
